@@ -38,37 +38,13 @@ const showAlert=(message,type)=>{
   return (
     <> 
       
-      {/* <Navbar/> */}
-      {/* <About/> */}
+      
       <Navbar title="TextUtils" mode={mode} togglemode={togglemode}/>
       <Alert Alert={alert}/>
       <div className="container my-3"> 
       <TextForm showAlert={showAlert} heading="Enter the text to analyze below"  mode={mode} />
       </div>
     </> 
-
-
-
-
-
-
-
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React with Icoder
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 

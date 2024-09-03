@@ -2,26 +2,22 @@ import React, { useState } from 'react';
 
 export default function TextForm(props) {
     const handleupclick = ()=>{
-        // console.log("Uppercase was clicked" + text);
         let newText = text.toUpperCase();
         setText(newText) 
         props.showAlert("converted to Uppercase","success");
     }
  
     const handleloclick = ()=>{
-        // console.log("Uppercase was clicked" + text);
         let newText = text.toLowerCase();
         setText(newText);
         props.showAlert("converted to Lowercase","success");
     }
     const handlecleclick = ()=>{
-        // console.log("Uppercase was clicked" + text);
         let newText = '';
         setText(newText); 
         props.showAlert("Text Cleared!","success");
     }
     const handlecopyclick = ()=>{ 
-        // console.log("i am copy");
         var text= document.getElementById("mybox");
         text.select();
         navigator.clipboard.writeText(text.value);
@@ -34,7 +30,6 @@ export default function TextForm(props) {
     }
     
 const handleonchange = (event)=>{
-    // console.log("Onchange was clicked" + text);
     setText(event.target.value); 
 }
 
