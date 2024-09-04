@@ -43,6 +43,7 @@ const showAlert=(message,type)=>{
       <Alert Alert={alert}/>
       <div className="container my-3"> 
       <TextForm showAlert={showAlert} heading="Enter the text to analyze below"  mode={mode} />
+      {/* <About/> */}
       </div>
     </> 
   );
